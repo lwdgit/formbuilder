@@ -168,9 +168,10 @@ span.edit-in-place:hover {
 .background {
   background-image: url(assets/background.jpg);
   background-position: bottom;
-  color: white !important;
+  //color: white !important;
+  color: black !important;
 }
 
 .background h1 {
-  color: white !important;
+  color: black !important;
 }

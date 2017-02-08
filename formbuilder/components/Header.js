@@ -7,7 +7,7 @@ export default function Header(props) {
     <div className="navbar navbar-default navbar-static-top" role="navigation">
     <div className="container">
       <div className="navbar-header">
-        <a className="navbar-brand" href="#">Kinto formbuilder</a>
+        <a className="navbar-brand" href="#">表单设计工具</a>
       </div>
       <div className="navbar-collapse collapse">
         <ul className="nav navbar-nav navbar-right">
