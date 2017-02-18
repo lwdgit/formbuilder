@@ -40,9 +40,9 @@ const LinkToBuilder = (props) => {
 const BackAndCheck = (props) => {
   return (
     <div>
-      <LinkToBuilder text="Continue editing" {...props} >
+      <LinkToBuilder text="继续编辑" {...props} >
         <Link className="list-group-item" to="/builder/json">
-          <i className="glyphicon glyphicon-fullscreen" /> View as JSON
+          <i className="glyphicon glyphicon-fullscreen" /> 以json方式查看
         </Link>
       </LinkToBuilder>
       <Check />
@@ -53,7 +53,7 @@ const BackAndCheck = (props) => {
 const BackAndDownloadJSONSchema = (props) => {
   return (
     <div>
-      <LinkToBuilder text="Continue editing" {...props}/>
+      <LinkToBuilder text="继续编辑" {...props}/>
       <div className="list-group">
         <JsonSchemaDownloaderContainer />
       </div>
@@ -91,7 +91,7 @@ export default (
         components={{...common, sidebarComponent: null, header: null, content: AdminViewContainer}} />
       <Route path="*" components={{
         sidebarComponent: LinkToHome,
-        content: _ => <h1>Page not found.</h1>
+        content: _ => <h1>页面未找到 囧</h1>
       }}/>
     </Route>
   );

@@ -8,8 +8,8 @@ export default function RecordCreated(props) {
 
   return (
     <div>
-      <h3>Submitted!</h3>
-      Thanks, your data has been submitted!
+      <h3>提交成功!</h3>
+      感谢, 数据已提交!
     </div>
   );
 }

@@ -21,17 +21,17 @@ export default function FormActions(props) {
       <ButtonToolbar className="builder-inner-actions">
         <FieldListDropdown className="pull-right" {...props}>
           <i className="glyphicon glyphicon-plus" />
-          Add a field
+          添加字段
         </FieldListDropdown>
       </ButtonToolbar>
       <ButtonGroup className="pull-right">
         <Button onClick={() => confirm("This action will reset all unsaved changes, Are you sure?") && props.resetForm()}>
           <i className="glyphicon glyphicon-remove" />
-          Reset <span className="hidden-xs">form</span>
+          重置 <span className="hidden-xs">表单</span>
         </Button>
         <Button bsStyle="success" onClick={onClick}>
           <i className={`glyphicon glyphicon-${saveIconName}`} />
-          Save your form
+          保存表单
         </Button>
       </ButtonGroup>
     </div>

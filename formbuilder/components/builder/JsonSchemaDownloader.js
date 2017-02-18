@@ -9,7 +9,7 @@ export default function JsonSchemaDownloader(props) {
   return (
     <a className="list-group-item" download={filename} href={fileContent}>
       <i className="glyphicon glyphicon-download" />&nbsp;
-        Download JSON
+       下载 JSON
     </a>
   );
 }

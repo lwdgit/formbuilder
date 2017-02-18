@@ -54,17 +54,17 @@ class FieldPropertiesEditor extends Component {
     return (
       <div className="panel panel-default field-editor">
         <div className="panel-heading clearfix">
-            <strong className="panel-title">Edit {name}</strong>
+            <strong className="panel-title">编辑 {name}</strong>
 
             <ButtonToolbar className="pull-right">
               <FieldListDropdown bsStyle="link" {...this.props}>
-                change field <i className="glyphicon glyphicon-cog"/>
+                切换字段 <i className="glyphicon glyphicon-cog"/>
               </FieldListDropdown>
               <Button bsStyle="link" onClick={onDelete}>
-                delete <i className="glyphicon glyphicon-trash"/>
+                删除 <i className="glyphicon glyphicon-trash"/>
               </Button>
               <Button bsStyle="link" name="close-btn" onClick={onCancel}>
-                close <i className="glyphicon glyphicon-remove-sign"/>
+                关闭编辑 <i className="glyphicon glyphicon-remove-sign"/>
               </Button>
             </ButtonToolbar>
         </div>
@@ -74,7 +74,7 @@ class FieldPropertiesEditor extends Component {
             formData={formData}
             onChange={this.onChange.bind(this)}
             onSubmit={onUpdate}>
-            <button type="submit" className="btn btn-info pull-right">Submit</button>
+            <button type="submit" className="btn btn-info pull-right">提交</button>
           </Form>
         </div>
       </div>
@@ -101,10 +101,10 @@ function DraggableFieldContainer(props) {
           </div>
           <div className="col-sm-3 editable-field-actions">
             <Button bsStyle="link" onClick={onEdit}>
-              edit <i className="glyphicon glyphicon-edit"/>
+              编辑 <i className="glyphicon glyphicon-edit"/>
             </Button>
             <Button bsStyle="link" onClick={onDelete}>
-              delete <i className="glyphicon glyphicon-trash"/>
+              删除 <i className="glyphicon glyphicon-trash"/>
             </Button>
           </div>
         </div>

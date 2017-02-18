@@ -23,18 +23,17 @@ export default function Welcome(props) {
         <div className="row">
         <div className="col-md-4">
           <h3><i className="glyphicon glyphicon-eye-close"></i> 隐私问题 </h3>
-          <p>With <a href="http://www.kinto-storage.org">Kinto</a>, you are not giving Google or any other giants your data.</p>
-          <p>Our goal is not to host all the forms of the world, so we try to make it easy for you to <a href="https://kinto.readthedocs.io/en/stable/tutorials/install.html">host your own servers</a>.</p>
+          <p>使用 <a href="https://github.com/wwj718/formbuilder">formbuilder</a>, 你无需将数据交到第三方服务商手中.</p>
+          <p>随时可以将它部署到你自己的服务器上</p>
         </div>
         <div className="col-md-4">
           <h3><i className="glyphicon glyphicon-heart-empty"></i> 开源</h3>
-          <p>All the code we write is <a href="https://github.com/kinto/formbuilder">written in the open</a> and we try to be
-          the most inclusive as we can to welcome your ideas.</p>
-          <p>Kinto and the formbuilder are released under Apache 2.0 licenses</p>
+          <p>源码开放，期待你的好点子，欢迎一起来改进它</p>
+          <p>项目采用 Apache 2.0 licenses</p>
         </div>
         <div className="col-md-4">
           <h3><i className="glyphicon glyphicon-saved"></i> 无需注册</h3>
-          <p>You don't need an account to create a new form: just create and give it to your friends, it's a matter of minutes!</p>
+          <p>无需创建账号: 创建好表单，将生成的链接分享给他人即可, 分分钟搞定!</p>
         </div>
         </div>
       </div>

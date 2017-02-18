@@ -21,7 +21,7 @@ export default class AdminView extends Component {
     if (ready) {
       content = (
       <div>
-        <h3>Results for {title}</h3>
+        <h3>{title}: 最近提交的表单数据</h3>
         <CSVDownloader
           schema={this.props.schema}
           fields={schemaFields}

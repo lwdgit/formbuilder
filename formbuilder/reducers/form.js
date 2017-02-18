@@ -18,8 +18,8 @@ const INITIAL_STATE = {
   error: null,
   schema: {
     type: "object",
-    title: "Untitled form",
-    description: "Enter some description for your form here",
+    title: "未命名表单",
+    description: "描述你的表单",
     properties: {}
   },
   uiSchema: {

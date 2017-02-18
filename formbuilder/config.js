@@ -1,3 +1,5 @@
+//参考
+//ui https://github.com/mozilla-services/react-jsonschema-form#custom-css-class-names
 export default {
   projectName: process.env.PROJECT_NAME || "Formbuilder",
   server: {
@@ -9,7 +11,7 @@ export default {
     {
       id: "text",
       icon: "text-color",
-      label: "Short text",
+      label: "单行文字",
       jsonSchema: {
         type: "string",
         title: "Edit me",
@@ -20,8 +22,8 @@ export default {
         editSchema: {
           type: "object",
           properties: {
-            title: {type: "string", title: "Label"},
-            description: {type: "string", title: "Example value"},
+            title: {type: "string", title: "标题"},
+            description: {type: "string", title: "默认值"},
             required: {type: "boolean"},
           }
         },
@@ -31,7 +33,7 @@ export default {
     {
       id: "multilinetext",
       icon: "align-left",
-      label: "Long text",
+      label: "多行文字",
       jsonSchema: {
         type: "string",
         title: "Edit me",
@@ -43,8 +45,29 @@ export default {
         editSchema: {
           type: "object",
           properties: {
-            title: {type: "string", title: "Label"},
-            description: {type: "string", title: "Example value"},
+            title: {type: "string", title: "标题"},
+            description: {type: "string", title: "默认值"},
+            required: {type: "boolean"},
+          }
+        },
+      },
+      formData: {}
+    },
+    {
+      id: "number",
+      icon: "check",
+      label: "数字",
+      jsonSchema: {
+        type: "integer",
+        title: "Edit me", 
+        default: false, //minimum  用该动态生成
+      },
+      uiSchema: {
+        "ui:widget": "updown",
+        editSchema: {
+          type: "object",
+          properties: {
+            title: {type: "string", title: "标题"},
             required: {type: "boolean"},
           }
         },
@@ -54,7 +77,7 @@ export default {
     {
       id: "checkbox",
       icon: "check",
-      label: "Checkbox",
+      label: "开关",
       jsonSchema: {
         type: "boolean",
         title: "Edit me",
@@ -64,7 +87,7 @@ export default {
         editSchema: {
           type: "object",
           properties: {
-            title: {type: "string", title: "Label"},
+            title: {type: "string", title: "标题"},
             required: {type: "boolean"},
           }
         },
@@ -74,7 +97,7 @@ export default {
     {
       id: "multiple-checkbox",
       icon: "check",
-      label: "Multiple choices",
+      label: "多项选择",
       jsonSchema: {
         type: "array",
         title: "A multiple choices list",
@@ -89,11 +112,11 @@ export default {
         editSchema: {
           type: "object",
           properties: {
-            title: {type: "string", title: "Label"},
+            title: {type: "string", title: "标题"},
             required: {type: "boolean"},
             enum: {
               type: "array",
-              title: "Choices",
+              title: "选项",
               items: {
                 type: "string"
               },
@@ -107,7 +130,7 @@ export default {
     {
       id: "radiobuttonlist",
       icon: "list",
-      label: "Choice list",
+      label: "单项选择",
       jsonSchema: {
         type: "string",
         title: "Edit me",
@@ -118,11 +141,11 @@ export default {
         editSchema: {
           type: "object",
           properties: {
-            title: {type: "string", title: "Label"},
+            title: {type: "string", title: "标题"},
             required: {type: "boolean"},
             enum: {
               type: "array",
-              title: "Options",
+              title: "选项",
               items: {
                 type: "string"
               }
@@ -135,7 +158,7 @@ export default {
     {
       id: "select",
       icon: "chevron-down",
-      label: "Select List",
+      label: "下拉框",
       jsonSchema: {
         type: "string",
         format: "string",
@@ -147,11 +170,11 @@ export default {
         editSchema: {
           type: "object",
           properties: {
-            title: {type: "string", title: "Label"},
+            title: {type: "string", title: "标题"},
             required: {type: "boolean"},
             enum: {
               type: "array",
-              title: "Options",
+              title: "选项",
               items: {
                 type: "string"
               }
@@ -164,7 +187,7 @@ export default {
     {
       id: "date",
       icon: "calendar",
-      label: "Date",
+      label: "日期",
       jsonSchema: {
         type: "string",
         format: "date",
@@ -175,12 +198,35 @@ export default {
         editSchema: {
           type: "object",
           properties: {
-            title: {type: "string", title: "Label"},
+            title: {type: "string", title: "标题"},
             required: {type: "boolean"}
           }
         },
       },
       formData: {}
     },
+    {
+      id: "date-time",
+      icon: "calendar",
+      label: "日期-时间",
+      jsonSchema: {
+        type: "string",
+        format: "date-time",
+        title: "Edit me",
+      },
+      uiSchema: {
+        "ui:widget": "alt-datetime",
+        editSchema: {
+          type: "object",
+          properties: {
+            title: {type: "string", title: "标题"},
+            required: {type: "boolean"}
+          }
+        },
+      },
+      formData: {}
+    },
+
+
   ],
 };

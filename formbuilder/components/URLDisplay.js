@@ -6,7 +6,7 @@ export default function URLDisplay(props) {
   };
 
   const icon = props.type === "admin" ? "eye-close" : "bullhorn";
-  const label = props.type == "admin" ? "Admin link" : "Form link";
+  const label = props.type == "admin" ? "管理链接" : "表单链接";
   const glyphicon = `glyphicon glyphicon-${icon}`;
 
   return (
